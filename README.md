@@ -1,2 +1,2 @@
 # Manga-Mania
-https://drive.google.com/drive/folders/1aZbsFAYUdgRvp9iQUEqQ9C9uKTrLfc2g?usp=drive_link
+https://drive.google.com/drive/folders/1Wq0MYprQALLRkJ8_phkgS-c88X-mSTMq?usp=sharing
