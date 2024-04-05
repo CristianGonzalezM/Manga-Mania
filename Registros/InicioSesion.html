@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inicio Sesion </title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('/Imagenes/FondoInicio.jpg');
+            background-size: cover;
+            /*background-position: center; centrar imagen*/
+            background-repeat: no-repeat;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+
+        .Izquierda {
+            position: fixed;
+            top: 50%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .CentrarLetra {
+            text-align: center;
+        }
+
+        .Boton {
+            color: black;
+            background-color: #ffffff;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body> <!-- Cuerpo del codigo -->
+    <header> <!-- Cabeza del codigo -->
+        
+    </header>
+
+    <main> <!-- Codigo principal o central -->
+        <div class="Izquierda">
+            <h1> Iniciar Sesion </h1>
+            <form action="/Paginas/Bienvenido.html" method="post">
+                <b> <label for="rut"> Rut Cliente:</label> </b> <br>
+                <input type="text" id="rut" name="rut" required>
+                    
+                <br> <br>
+
+                
+                <b> <label for="contrasena"> Contraseña:</label> </b> <br>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+                <button class="Boton"> Entrar </button>
+
+                <br>
+                    
+                <div class="CentrarLetra">
+                    <b> <a href="Registro.html">Registrarse</a> || <a href="RecuperarContra.html">Olvidé mi contraseña</a> </b>
+                    <br> <br>
+                    <b> <a href="javascript:history.back()"> Volver a la pagina anterior </a> </b>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer> <!-- Pie de codigo -->
+
+    </footer>
+</body>
+</html>

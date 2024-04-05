@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1, h2, h3 {
+            margin: 0;
+        }
+
+        main {
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('/Imagenes/FondoBienvenido.jpg');
+            background-size: cover;
+            /*background-position: center; centrar imagen*/
+            background-repeat: no-repeat;
+        }
+
+        .Espacio {
+            text-align: center;
+        }
+
+        .Espacio > div {
+            display: inline-block;
+            margin: 0 30px;
+        }
+
+        .Espacio img {
+            width: 200px;
+            height: 150px;
+        }
+
+        .Boton {
+            color: black;
+            background-color: #ffffff;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
-    <body background="FondoInicioSesion" bgcolor="2CA0A4"> <!-- Color del fondo -->
-<body>
-    <h1> Bienvenido </h1> <!-- Titulo Bienvenido -->
+<body> <!-- Cuerpo del codigo -->
+    <header> <!-- Cabeza del codigo -->
+        <h1> Bienvenidos a MangaMania </h1>
+        <label> <b> Nuestra Pagina Web les ofrece una variedad de Articulos sobre los Mangas o sus respectivos animes.</b></label>
+    </header>
+
+    <main> <!-- Codigo principal o central -->
+        <h2> Catalogo de MangaMania </h2> <br> <br> <br> <br> <br> <br> <br>
+        <div class="Espacio">
+            <div>
+                <form action="/Paginas/Pag Mangas.html" method="post">
+                    <a href="/Paginas/Pag Mangas.html">
+                        <img src="/Imagenes/Mangas.jpg" alt="Mangas" style="border-radius: 25%;">
+                    </a>
+                    <p> <button class="Boton"> Mangas </button> </p>
+                </form>
+            </div>
+            <div>
+                <form action="/Paginas/Pag Figuras.html" method="post">
+                    <a href="/Paginas/Pag Figuras.html">
+                        <img src="/Imagenes/Figuras.jpg" alt="Figuras" style="border-radius: 25%;">
+                    </a>
+                    <p> <button class="Boton"> Figuras </button> </p>
+                </form>
+            </div>
+            <div>
+                <form action="/Paginas/Pag Accesorios.html" method="post">
+                    <a href="/Paginas/Pag Accesorios.html">
+                        <img src="/Imagenes/Accesorios.jpg" alt="Accesorios" style="border-radius: 25%;">
+                    </a>
+                    <p> <button class="Boton"> Accesorios </button> </p>
+                </form>
+            </div>
+          </div>
+    </main>
+
+    <footer> <!-- Pie de codigo -->
+        <h3> Entrar en la comunidad </h3>
+        <label> <b> ¿Te gustaria entrar en nuestra sociedad para estar al dia con nuestros articulos?</b></label>
+        <br>
+        <label> <b> <a href="/Registros/Registro.html"> Registrate </a> o si ya tienes <a href="/Registros/InicioSesion.html"> Inicia Sesion</a> </b></label>
+    </footer>
 </body>
 </html>
