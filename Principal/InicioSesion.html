@@ -7,25 +7,37 @@
 </head>
     <body background="FondoInicioSesion" bgcolor="2CA0A4"> <!-- Color del fondo -->
 <body>
-   <h1> Iniciar Sesion </h1> <!-- Titulo Iniciar Sesion -->
-   <form action="/login" method="post">
-        <b> <label for="rut"> Rut Cliente:</label> </b>
-        <input type="text" id="rut" name="rut" required>
-        
-        <br> <br>
+    <div class="Centrar">
+        <h1> Iniciar Sesion </h1> <!-- Titulo Iniciar Sesion -->
+        <form action="/Paginas/Bienvenido.html" method="post">
+                <img src="/Imagenes/Usuario.png" width="5%">
+                <b> <label for="rut"> Rut Cliente:</label> </b>
+                <input type="text" id="rut" name="rut" required>
+                
+                <br> <br>
 
-        <b> <label for="contrasena"> Contraseña:</label> </b>
-        <input type="password" id="contrasena" name="contrasena" required>
+                <img src="/Imagenes/Candado.png" width="5%">
+                <b> <label for="contrasena"> Contraseña:</label> </b>
+                <input type="password" id="contrasena" name="contrasena" required>
 
-        <button> Entrar </button>
+                <button> Entrar </button>
 
-        <br>
+                <br>
+                
+                <b> <a href="Registro.html">Registrarse</a> | <a href="RecuperarContra.html">Olvidé mi contraseña</a> </b>
+    </div>
 
-        <b> <a href="Registro.html">Registrarse</a> | <a href="RecuperarContra.html">Olvidé mi contraseña</a> </b>
-
-
-        <!-- href volver a una pagina -->
-        <!-- <img src="FondoInicioSesion.jpg" width="20%"> -->
+        <style>
+        .Centrar {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        </style>
    </form>
 </body>
 </html>
