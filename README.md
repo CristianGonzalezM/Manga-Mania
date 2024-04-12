@@ -2,7 +2,7 @@
 Integrantes:
 
 · José Miguel Aránguiz
-· Cristina Gonzalez Molina
+· Cristian Gonzalez Molina
 · 
 · 
 
