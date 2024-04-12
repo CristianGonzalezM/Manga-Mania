@@ -3,7 +3,7 @@ Integrantes:
 
 · José Miguel Aránguiz
 · Cristian Gonzalez Molina
-· 
+· Dixon Campos
 · 
 
 <!--
