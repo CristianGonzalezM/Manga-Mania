@@ -4,7 +4,6 @@ Integrantes:
 · José Miguel Aránguiz <br>
 · Cristian Gonzalez Molina <br>
 · Dixon Campos <br>
-· 
 
 <!--
 Ayudas:
