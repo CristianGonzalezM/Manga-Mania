@@ -1,9 +1,9 @@
 # Manga-Mania
 Integrantes:
 
-· José Miguel Aránguiz
-· Cristian Gonzalez Molina
-· Dixon Campos
+· José Miguel Aránguiz <br>
+· Cristian Gonzalez Molina <br>
+· Dixon Campos <br>
 · 
 
 <!--
