@@ -1,0 +1,50 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, h2, h3 {
+    margin: 0;
+}
+
+main {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url('/Imagenes/FondoBienvenido.jpg');
+    background-size: cover;
+    /*background-position: center; centrar imagen*/
+    background-repeat: no-repeat;
+}
+
+.Espacio {
+    text-align: center;
+}
+
+.Espacio > div {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.Espacio img {
+    width: 200px;
+    height: 150px;
+}
