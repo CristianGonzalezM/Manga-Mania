@@ -1,0 +1,41 @@
+/* Estilo de las Paginas de Usuarios */
+header, footer {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+main {
+    margin: 0;
+    color: #fff;
+    /*text-align: center; Centrar texto*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    background-image: url('/Images/FondoUser.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    background-image: url('/Images/FondoPanel.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 3%;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    width: auto; /* Ancho */
+    height: auto; /* Altura */
+  }

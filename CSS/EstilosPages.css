@@ -1,0 +1,33 @@
+/* Estilo de las Paginas */
+header, footer {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+main {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+img {
+    border-radius: 25%;
+    width: 70%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 7, 7);
+    background-image: url('/Images/FondoPages.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
