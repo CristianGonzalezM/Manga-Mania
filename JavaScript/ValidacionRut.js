@@ -2,23 +2,13 @@ window.onload = function () {
     document
       .getElementById("miFormulario")
       .addEventListener("submit", function (event) {
-        if (!validarEmail(document.getElementById("email").value)) {
-          event.preventDefault(); // Prevenir el envío del fomrulario si la validación falla
-          alert("Email no cumplen con el formato esperado.");
-        }
-  
+        
         if (!validarRut(document.getElementById("rut").value)) {
           event.preventDefault(); // Prevenir el envío del formlario si la validación falla
           alert("Rut no cumplen con el formato esperado.");
         }
       });
   };
-  
-  function validarEmail(email) {
-    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return regex.test(email);
-  }
-  
   function validarRut(rut) {
     var valor = rut.replace(/[\.-]/g, "");
     var cuerpo = valor.slice(0, -1);
