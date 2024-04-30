@@ -11,8 +11,8 @@ Ayudas:
 https://drive.google.com/drive/folders/1Wq0MYprQALLRkJ8_phkgS-c88X-mSTMq?usp=sharing
 https://getbootstrap.com/
 
-Proyecto ToDoList: https://github.com/PGY3121/TodoList.
-Prácticos: https://github.com/orgs/PGY3121/repositories.
+Proyecto ToDoList: https://github.com/PGY3121/TodoList
+Prácticos: https://github.com/orgs/PGY3121/repositories
 
 https://github.com/PGY3121/Javascript
 

@@ -31,3 +31,23 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+.ventana {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-image: url('/Images/FondoVentana.jpg');
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
