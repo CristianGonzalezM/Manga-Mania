@@ -32,22 +32,30 @@ body {
     background-repeat: no-repeat;
 }
 
-.ventana {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    background-image: url('/Images/FondoVentana.jpg');
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
 .cerrar {
     position: absolute;
     top: 5px;
     right: 10px;
     cursor: pointer;
+}
+
+hr {
+    border: 5px solid red;
+}
+
+.tabla {
+    padding: 20px;
+    margin: 20px;
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
