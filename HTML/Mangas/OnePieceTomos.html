@@ -3,35 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Piece Tomos</title>
+    <title>One Piece - Tomos</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+
     <!-- Llamar el style deseado -->
     <link rel="stylesheet" href="/CSS/EstilosPages.css">
+
+    <script src="/JavaScript/MangaAcciones.js"></script>
 </head>
 <body> <!-- Cuerpo del codigo -->
     <header> <!-- Cabeza del codigo -->
-        <h1> MangaMania || Manga - One Piece Tomos </h1>
+        <div class="contenedor">
+            <img class="logo" src="/Images/LogoMangaMania.jpeg" alt="LogoMangaMania">
+            <h1> MangaMania || Mangas - One Piece - Tomos</h1>
+        </div>
     </header>
 
     <main> <!-- Codigo principal o central -->
         <nav class="navbar bg-body-tertiary"> <!-- Navegador entre paginas -->
             <div class="container">
                 <a class="navbar-brand" href="javascript:history.back()" > <i class="bi bi-skip-backward"></i> Regresar </a>
-                <a class="navbar-brand" href="Bienvenido.html" > <i class="bi bi-house-fill"></i> Inicio </a>
-                <a class="navbar-brand" href="Pag Mangas.html"> <i class="bi bi-book"></i> Mangas</a>
-                <a class="navbar-brand" href="Pag Figuras.html"> <i class="bi bi-person-arms-up"></i> Figuras</a>
-                <a class="navbar-brand" href="Pag Accesorios.html"> <i class="bi bi-journal-bookmark-fill"></i> Accesorios</a>
+                <a class="navbar-brand" href="/HTML/Pages/Bienvenido.html" > <i class="bi bi-house-fill"></i> Inicio </a>
+                <a class="navbar-brand" href="/HTML/Pages/Pag Mangas.html"> <i class="bi bi-book"></i> Mangas</a>
+                <a class="navbar-brand" href="/HTML/Pages/Pag Figuras.html"> <i class="bi bi-person-arms-up"></i> Figuras</a>
+                <a class="navbar-brand" href="/HTML/Pages/Pag Accesorios.html"> <i class="bi bi-journal-bookmark-fill"></i> Accesorios</a>
             </div>
-        </nav> <br>
-        
-        <!-- Link del Tomo 1 de One Piece -->
-        <iframe frameborder="0" scrolling="no" style="border:0px" src="https://books.google.cl/books?id=lO1zDwAAQBAJ&newbks=0&lpg=PP1&dq=one%20piece%20tomo%201&hl=es&pg=PA52&output=embed" width=500 height=500></iframe>
-        
+        </nav><br>
+
+        <div class="row">
+            <div class="col-3">
+                <img alt="LogoMangaMania" src="/Images/OnePieceV1.jfif" style="height: 450px; width:100%; padding: 20px;">
+                <div class="list-group">
+                    <div class="btn btn-secondary">
+                        <i class="bi bi-caret-right"></i> Estado: <i class="bi bi-broadcast"></i><span> Finalizado </span> <i class="bi bi-caret-left"></i>
+                    </div>
+                </div>
+                <div class="list-group">
+                    <div class="btn btn-primary">
+                        <i class="bi bi-caret-right"></i> Publicacion: <i class="bi bi-clock"></i><span> 21/09/1999 </span> <i class="bi bi-caret-left"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-8">
+                <h1>One Piece</h1>
+                <b style="margin: 20px; padding: 20px;">
+                    One Piece es la historia de un chico llamado Monkey D. Luffy, quién se inspiró en Shanks, un pirata que le salvó la vida, para convertirse en el Rey de los Piratas. Al comienzo de la serie, veinticuatro años antes de la historia actual, un pirata llamado Gol D.
+                </b>
+                <div class="tabla">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Tomo</th>
+                                <th scope="col">Capitulo</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Visualizar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>1 al 8</td>
+                                <td>Finalizado</td>
+                                <td>
+                                    <form action="https://drive.google.com/file/d/1ePAuOtWqu31UJ0qrT6mU9QPXDA0CMTps/view?usp=sharing" target="_blank">
+                                        <button class="btn btn-outline-success btn-sm">
+                                            Ver <a href=""></a><i class="bi bi-play-circle"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>9 al 17</td>
+                                <td>Finalizado</td>
+                                <td>
+                                    <form action="https://drive.google.com/file/d/1ma46j2_siC0gMZry1ZfmdMVz8ug0wcZB/view?usp=sharing" target="_blank">
+                                        <button class="btn btn-outline-success btn-sm">
+                                            Ver <a href=""></a><i class="bi bi-play-circle"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h2>Registro de Producto</h2>
+            <form id="mangaForm">
+                <div class="form-group">
+                    <label for="mangaName">Nombre Manga:</label>
+                    <input type="text" class="form-control" id="mangaName" name="mangaName" required>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Precio:</label>
+                    <input type="number" class="form-control" id="mangaPrice" name="mangaPrice" required>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+        </div>
+        <hr>
+            <!-- añadir algo -->
+        <hr>
+        <div class="container">
+            <h3>Productos Registrados</h3>
+            <table id="mangasTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre Manga</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los registros del producto se añadirán aquí -->
+                </tbody>
+            </table>
+        </div>
+
     </main>
     
     <footer> <!-- Pie de codigo -->

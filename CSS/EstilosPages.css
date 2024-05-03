@@ -59,3 +59,12 @@ hr {
     align-items: center;
     justify-content: center;
 }
+
+.carousel-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.carousel-img {
+    max-height: 500px;
+    width: 500px;
+}
