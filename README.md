@@ -31,4 +31,6 @@ Paginas de Mangas donde hay informacion de los capitulos:
 https://naruto.fandom.com/es/wiki/Lista_de_Vol%C3%BAmenes
 
 https://www.descargarmangaspormega.com/
+https://narutodb.xyz/docs/characters/getAllCharacters
+https://naruto.fandom.com/es/wiki/Naruto_Uzumaki
 -->
