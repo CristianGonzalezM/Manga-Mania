@@ -1,4 +1,4 @@
-let nextUrl = 'https://rickandmortyapi.com/api/character'; // URL inicial para personajes
+let nextUrl = 'https://narutodb.xyz/api/character'; // URL inicial para personajes
         
         function fetchData(url, container, templateFunction){
             $('#loading').show(); // Muestra el indicador de cargando
@@ -20,7 +20,7 @@ let nextUrl = 'https://rickandmortyapi.com/api/character'; // URL inicial para p
         function characterTemplate(character){
             return $(`<div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="${character.image}" alt="${character.name}">
+                    <img class="card-img-top" src="${character.images}" alt="${character.name}">
                     <div class="card-body">
                         <h5 class="card-title">${character.name}</h5>
                         <p class="card-text">${character.species}</p>
@@ -29,6 +29,7 @@ let nextUrl = 'https://rickandmortyapi.com/api/character'; // URL inicial para p
             </div>`);
         }
 
+        /*
         function episodeTemplate(episode){
             return $(`<div class="col-md-4">
                 <div class="card">
@@ -46,6 +47,8 @@ let nextUrl = 'https://rickandmortyapi.com/api/character'; // URL inicial para p
             }
         });
 
+        */
+
         $(document).ready(function () {
-            fetchData(nextUrl, $('#characters'), characterTemplate);
+            fetchData(nextUrl, $('#characterss'), characterTemplate);
         })
