@@ -31,14 +31,14 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
 }
-
+/*
 .cerrar {
     position: absolute;
     top: 5px;
     right: 10px;
     cursor: pointer;
 }
-
+*/
 hr {
     border: 5px solid red;
 }

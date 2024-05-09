@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naruto - Tomos</title>
 
+    <!-- Inicio Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Termino Bootstrap -->
 
-    <!-- Llamar el style deseado -->
-    <link rel="stylesheet" href="/CSS/EstilosPages.css">
+    <link rel="stylesheet" href="/CSS/EstilosPages.css"><!-- Llmar Style deseado -->
+    <link rel="website icon" type="png" href="/Images/LogoMangaMania.png"> <!-- Llamar el logo de la pagina -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/JavaScript/narutoAPI.js"></script>
@@ -19,7 +20,7 @@
 <body> <!-- Cuerpo del codigo -->
     <header> <!-- Cabeza del codigo -->
         <div class="contenedor">
-            <img class="logo" src="/Images/LogoMangaMania.jpeg" alt="LogoMangaMania">
+            <img class="logo" src="/Images/LogoMangaMania.png" alt="LogoMangaMania">
             <h1> MangaMania || Mangas - Naruto - Tomos</h1>
         </div>
     </header>
@@ -61,6 +62,7 @@
             </div>
         </div>
         <hr>
+        <!-- Inicio Tabla -->
         <div class="tabla">
             <table class="table table-striped">
                 <thead>
@@ -68,7 +70,7 @@
                         <th scope="col">Tomo</th>
                         <th scope="col">Capitulo</th>
                         <th scope="col">Estado</th>
-                        <th scope="col">Visualizar</th>
+                        <th scope="col">Visualizar Pagina</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -99,28 +101,42 @@
                 </tbody>
             </table>
         </div>
+        <!-- Termino Tabla -->
         <hr>
-
+        <!-- Inicio Introduccion -->
         <img src="/Images/NarutoTitulo.png" alt="NarutoTitulo" style="width: 20%;">
             <h2>Introducción</h2>
             <b>
-                Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) es el protagonista de la serie del manga y anime Naruto y Naruto Shippūden. Asimismo es partícipe del manga y anime Boruto: Naruto Next Generations, secuela de la obra original de Masashi Kishimoto. Es residente de Konohagakure, hijo del Cuarto Hokage, Minato Namikaze y su esposa Kushina Uzumaki, además de ser la actual reencarnación de Asura Ōtsutsuki. Fue miembro del Equipo Kakashi junto a Sakura Haruno y Sasuke Uchiha. Actualmente es el Séptimo Hokage (七代目火影, Nanadaime Hokage; literalmente «Séptima Sombra del Fuego») de Konoha, cumpliendo su sueño, así como también el esposo de Hinata Hyūga y padre de Boruto Uzumaki y Himawari Uzumaki.
-            </b>
-        <hr>
+                "Naruto" es una franquicia de manga y anime creada por Masashi Kishimoto que ha dejado una marca indeleble en la cultura popular desde su debut en 1999. La historia sigue las aventuras de Naruto Uzumaki, un joven ninja con el sueño de convertirse en el Hokage, el líder de su aldea y el ninja más poderoso de todos.<br><br>
 
-        <!-- Aqui empieza el API-->
+                La serie está ambientada en un mundo ninja ficticio donde las aldeas ocultas luchan por el poder y la supervivencia. Naruto, un niño huérfano con un pasado misterioso, es marginado y menospreciado por muchos en su aldea debido a que tiene sellado dentro de él al Zorro de Nueve Colas, una criatura legendaria que una vez devastó la aldea.<br><br>
+
+                A pesar de sus desafíos, Naruto es un optimista incansable y nunca se rinde en la búsqueda de su sueño. Con la ayuda de sus amigos y compañeros de equipo, incluyendo a Sasuke Uchiha y Sakura Haruno, Naruto se embarca en misiones peligrosas, enfrenta enemigos formidables y aprende valiosas lecciones sobre amistad, sacrificio y redención.<br><br>
+
+                A lo largo de la serie, Naruto descubre la verdad sobre su pasado, desentraña conspiraciones oscuras y se enfrenta a enemigos poderosos, incluido el misterioso grupo conocido como Akatsuki. A medida que Naruto crece y se fortalece como ninja, también lo hace su determinación de proteger a sus seres queridos y cumplir su destino como Hokage.<br><br>
+
+                "Naruto" es conocido por su emocionante acción, personajes carismáticos y desarrollo profundo de la trama y los personajes. La serie ha dejado un legado duradero en el mundo del anime y ha inspirado a millones de fanáticos en todo el mundo con su mensaje de perseverancia, amistad y superación personal.
+            </b>
+        <!-- Termino Introduccion -->
+        <hr>
+        <!-- Inicio video Trailer -->
+        <h2>Trailer</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QczGoCmX-pI?si=lMVeRC7CwqNelERG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Termino video Trailer -->
+        <hr>
+        <!-- Inicio API -->
         <div class="container">
             <h2>Personajes</h2>
-            <div id="characterss" class="row">
+            <div id="caracteres" class="row">
                 <!-- Personajes se cargarán aqui -->
             </div>
             <div id="loading">
                 Cargando más personajes ...
             </div>
         </div>
-        <!-- Termino de API -->
-
+        <!-- Termino API -->
         <hr>
+        <!-- Inicio Productos -->
         <div class="container">
             <h2>Registro de Producto</h2>
             <form id="mangaForm">
@@ -136,7 +152,9 @@
                 <button type="submit" class="btn btn-primary">Registrar</button>
             </form>
         </div>
+        <!-- Termino Productos -->
         <hr>
+        <!-- Inicio Productos Registrados -->
         <div class="container">
             <h3>Productos Registrados</h3>
             <table id="mangasTable" class="table">
@@ -152,13 +170,12 @@
                 </tbody>
             </table>
         </div>
-
+        <!-- Termino Productos Registrados -->
     </main>
-    
     <footer> <!-- Pie de codigo -->
         <h3> Entrar en la comunidad </h3>
-        <label> <b> ¿Te gustaria entrar en nuestra sociedad para estar al dia con nuestros articulos?</b></label> <br>
-        <label> <b> <a href="/HTML/User/Registro.html"> Registrate </a> o si ya tienes <a href="/HTML/User/InicioSesion.html"> Inicia Sesion</a></b></label>
+        <b> ¿Te gustaria entrar en nuestra sociedad para estar al dia con nuestros articulos?</b><br>
+        <b> <a href="/HTML/User/Registro.html"> Registrate </a> o si ya tienes <a href="/HTML/User/InicioSesion.html"> Inicia Sesion</a></b>
     </footer>
 </body>
 </html>
