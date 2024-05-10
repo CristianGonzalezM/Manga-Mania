@@ -25,4 +25,7 @@ https://narutodb.xyz/docs/characters/getAllCharacters
 Otras Paginas:
 https://freesets.vercel.app/
 https://allthetags.com/
+https://web.dragonball-api.com/documentation
+
+https://mangascompletos.com/hunter-x-hunter-manga/
 -->
