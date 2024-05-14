@@ -23,56 +23,89 @@
     </header>
 
     <main> <!-- Codigo principal o central -->
-        <nav class="navbar bg-body-tertiary"> <!-- Navegador entre paginas -->
+        <nav class="navbar bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="javascript:history.back()" > <i class="bi bi-skip-backward"></i> Regresar </a>
-                <a class="navbar-brand" href="Bienvenido.html" > <i class="bi bi-house-fill"></i> Inicio </a>
-                <a class="navbar-brand" href="Pag Mangas.html"> <i class="bi bi-book"></i> Mangas</a>
-                <a class="navbar-brand" href="Pag Figuras.html"> <i class="bi bi-person-arms-up"></i> Figuras</a>
-                <a class="navbar-brand" href="Pag Accesorios.html"> <i class="bi bi-journal-bookmark-fill"></i> Accesorios</a>
+              <a class="navbar-brand" href="/index.html">
+                <i class="bi bi-house-fill"></i> Inicio
+              </a>
+              <a class="navbar-brand" href="/HTML/Pages/Pag Mangas.html">
+                <i class="bi bi-book"></i> Mangas</a
+              >
+              <a class="navbar-brand" href="/HTML/Pages/Pag Categorias.html">
+                <i class="bi bi-tags"></i> Categoria</a
+              >
+              <a class="navbar-brand" href="/HTML/Pages/Pag_Populares.html">
+                <i class="bi bi-star"></i> Popular</a
+              >
             </div>
-        </nav> <br>
+        </nav><br>
 
         <div class="container text-center">
-            <div class="row align-items-start">
 
+            <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <form action="/HTML/Mangas/NarutoTomos.html">
-                        <img src="/Images/V1Naruto.jfif" alt="V1Naruto" style="border-radius: 25%; width: 50%; height: auto;">
-                        <p> <button class="btn btn-secondary"> <span> Naruto - Tomos </span> </button> </p>
-                    </form>
+                  <div class="card h-100">
+                    <img src="/Images/V1Naruto.jfif" class="card-img-top" alt="V1Naruto">
+                    <div class="card-body">
+                      <h5 class="card-title">Naruto</h5>
+                      <a href="/HTML/Mangas/NarutoTomos.html" class="btn btn-primary">Ir a los Tomos</a>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="col">
-                    <form action="/HTML/Mangas/OnePieceTomos.html">
-                        <img src="/Images/V1OnePiece.jfif" alt="V1OnePiece" style="border-radius: 25%; width: 50%; height: auto;">
-                        <p> <button class="btn btn-secondary"> <span> One Piece - Tomos </span> </button> </p>
-                    </form>
+                    <div class="card h-100">
+                        <img src="/Images/V1OnePiece.jfif" class="card-img-top" alt="V1OnePiece">
+                        <div class="card-body">
+                            <h5 class="card-title">One Piece</h5>
+                            <a href="/HTML/Mangas/OnePieceTomos.html" class="btn btn-primary">Ir a los Tomos</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col">
-                    <form action="/HTML/Mangas/dragonBallTomos.html">
-                        <img src="/Images/V1DragonBall.jpg" alt="V1DragonBall" style="border-radius: 25%; width: 50%; height: auto;">
-                        <p> <button class="btn btn-secondary"> <span> Dragon Ball - Tomos </span> </button> </p>
-                    </form>
+                    <div class="card h-100">
+                        <img src="/Images/V1DragonBall.jpg" class="card-img-top" alt="V1DragonBall">
+                        <div class="card-body">
+                            <h5 class="card-title">Dragon Ball</h5>
+                            <a href="/HTML/Mangas/dragonBallTomos.html" class="btn btn-primary">Ir a los Tomos</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col">
-                    <form action="/HTML/Mangas/hunterxHunterTomos.html">
-                        <img src="/Images/V1HunterxHunter.jpg" alt="V1HunterxHunter" style="border-radius: 25%; width: 50%; height: auto;">
-                        <p> <button class="btn btn-secondary"> <span> Hunter x Hunter - Tomos </span> </button> </p>
-                    </form>
+                    <div class="card h-100">
+                        <img src="/Images/V1HunterxHunter.jpg" class="card-img-top" alt="V1HunterxHunter">
+                        <div class="card-body">
+                            <h5 class="card-title">Hunter x Hunter</h5>
+                            <a href="/HTML/Mangas/hunterxHunterTomos.html" class="btn btn-primary">Ir a los Tomos</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col">
-                    <form action="/HTML/Mangas/neonGenesisEvangelion.html">
-                        <img src="/Images/V1NeonGenesisEvangelion.jpeg" alt="V1NeonGenesisEvangelion" style="border-radius: 25%; width: 50%; height: auto;">
-                        <p> <button class="btn btn-secondary"> <span> Neon Genesis Evangelion - Tomos </span> </button> </p>
-                    </form>
+                    <div class="card h-100">
+                        <img src="/Images/V1NeonGenesisEvangelion.jpeg" class="card-img-top" alt="V1NeonGenesisEvangelion">
+                        <div class="card-body">
+                            <h5 class="card-title">Neon Genesis Evangelion</h5>
+                            <a href="/HTML/Mangas/neonGenesisEvangelionTomos.html" class="btn btn-primary">Ir a los Tomos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/Images/V1Boruto.jpg" class="card-img-top" alt="V1Boruto">
+                        <div class="card-body">
+                            <h5 class="card-title">Boruto</h5>
+                            <a href="/HTML/Mangas/borutoTomos.html" class="btn btn-primary">Ir a los Tomos</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-        </div>
+
+        </div><br>
     </main>
     
     <footer> <!-- Pie de codigo -->

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenido</title>
+
+    <!-- Inicio Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Termino Bootstrap -->
+
+    <link rel="stylesheet" href="/CSS/EstilosPages.css" />
+    <!-- Llamar Style deseado -->
+    <link rel="website icon" type="png" href="/Images/LogoMangaMania.png" />
+    <!-- Llamar el logo de la pagina -->
+  </head>
+  <body>
+    <!-- Cuerpo del codigo -->
+    <header>
+      <!-- Cabeza del codigo -->
+      <div class="contenedor">
+        <img
+          class="logo"
+          src="/Images/LogoMangaMania.png"
+          alt="LogoMangaMania"
+        />
+        <h1>Bienvenidos a MangaMania</h1>
+      </div>
+      <b
+        >Nuestra Pagina Web les ofrece una variedad de Articulos sobre los
+        Mangas o sus respectivos animes.</b
+      >
+    </header>
+
+    <main>
+      <!-- Codigo principal o central -->
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <i class="bi bi-house-fill"></i> Inicio
+          </a>
+          <a class="navbar-brand" href="HTML/Pages/Pag Mangas.html">
+            <i class="bi bi-book"></i> Mangas</a
+          >
+          <a class="navbar-brand" href="HTML/Pages/Pag Categorias.html">
+            <i class="bi bi-tags"></i> Categoria</a
+          >
+          <a class="navbar-brand" href="HTML/Pages/Pag Mangas.html">
+            <i class="bi bi-star"></i> Popular</a
+          >
+        </div>
+      </nav>
+      <br />
+
+      <h2>Catalogo de MangaMania</h2>
+      <br />
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-container"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h5>Mangas</h5>
+              <a href="/HTML/Pages/Pag Mangas.html"
+                ><img
+                  src="/Images/Mangas.jpeg"
+                  class="d-block w-100"
+                  alt="Mangas"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+      <!-- Inicio mangas populares -->
+      <div class="logo">
+        <div class="Updates-module_subHeader_Nc89q">
+          <h1>Popular</h1>
+        </div>
+        <div>
+          <a href="/titles/200116" class=""
+            ><p class="RankingTitle-module_rankingNumber_a7Dbg">
+              <img src="Images/Top1.png" alt="Top1">
+            </p>
+            <div>
+              <img src="Images/MangaBoruto.jpg" alt="">
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">
+                  BORUTO - TWO BLUE VORTEX -
+                </p>
+                <p class="RankingTitle-module_author_2DBfa">
+                  MASASHI KISHIMOTO / MIKIO IKEMOTO
+                </p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />977425
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200018" class=""
+            ><p class="RankingTitle-module_rankingNumber_a7Dbg">
+              <img
+                src="data:image/png;base64,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"
+                class="RankingTitle-module_icon_hKj5L"
+              />
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga Jujutsu Kaisen by Gege Akutami for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200018/title_thumbnail_portrait_list/312841.jpg?key=3b9d71061be06b2f51289fc90946437d&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200018/title_thumbnail_portrait_list/312841.jpg?key=3b9d71061be06b2f51289fc90946437d&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">Jujutsu Kaisen</p>
+                <p class="RankingTitle-module_author_2DBfa">Gege Akutami</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />674335
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200016" class=""
+            ><p class="RankingTitle-module_rankingNumber_a7Dbg">
+              <img
+                src="data:image/png;base64,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"
+                class="RankingTitle-module_icon_hKj5L"
+              />
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga ONE PIECE by Eiichiro Oda for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200016/title_thumbnail_portrait_list/326463.jpg?key=49a0a2fe5eead1ab458a578ee5bc81a9&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200016/title_thumbnail_portrait_list/326463.jpg?key=49a0a2fe5eead1ab458a578ee5bc81a9&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">ONE PIECE</p>
+                <p class="RankingTitle-module_author_2DBfa">Eiichiro Oda</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />795269
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200098" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              4
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga CHAINSAW MAN by Tatsuki Fujimoto for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200098/title_thumbnail_portrait_list/312151.jpg?key=e1c3a41f0acbe344bae6f6ee3dbe4978&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200098/title_thumbnail_portrait_list/312151.jpg?key=e1c3a41f0acbe344bae6f6ee3dbe4978&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">CHAINSAW MAN</p>
+                <p class="RankingTitle-module_author_2DBfa">Tatsuki Fujimoto</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />454030
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200019" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              5
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga My Hero Academia by Kōhei Horikoshi for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200019/title_thumbnail_portrait_list/313270.jpg?key=fbf3c4e4a4f7a6ceef20f87b94237af8&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200019/title_thumbnail_portrait_list/313270.jpg?key=fbf3c4e4a4f7a6ceef20f87b94237af8&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">My Hero Academia</p>
+                <p class="RankingTitle-module_author_2DBfa">Kōhei Horikoshi</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />399824
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200020" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              7
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga Black Clover by Yuuki Tabata for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200020/title_thumbnail_portrait_list/311770.jpg?key=48d3546e9495c33daf50ce4141817c64&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200020/title_thumbnail_portrait_list/311770.jpg?key=48d3546e9495c33daf50ce4141817c64&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">Black Clover</p>
+                <p class="RankingTitle-module_author_2DBfa">Yuuki Tabata</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />276161
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200053" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              9
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga KAIJU NO.8 (8Kaijuu) by Matsumoto Naoya for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200053/title_thumbnail_portrait_list/312907.jpg?key=daa1dd1a2d3e65ea76279d425ee45757&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200053/title_thumbnail_portrait_list/312907.jpg?key=daa1dd1a2d3e65ea76279d425ee45757&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">
+                  KAIJU NO.8 (8Kaijuu)
+                </p>
+                <p class="RankingTitle-module_author_2DBfa">Matsumoto Naoya</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />298418
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200031" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              10
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga SPY x FAMILY by Endo Tatsuya for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200031/title_thumbnail_portrait_list/313768.jpg?key=d8185d948c7907c4e17107bc428b97d0&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200031/title_thumbnail_portrait_list/313768.jpg?key=d8185d948c7907c4e17107bc428b97d0&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">SPY x FAMILY</p>
+                <p class="RankingTitle-module_author_2DBfa">Endo Tatsuya</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />242338
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200123" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              11
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga Kagurabachi by Takeru Hokazono for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200123/title_thumbnail_portrait_list/324558.jpg?key=f1405c31fda6abf67ed1924708b92e3c&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200123/title_thumbnail_portrait_list/324558.jpg?key=f1405c31fda6abf67ed1924708b92e3c&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">Kagurabachi</p>
+                <p class="RankingTitle-module_author_2DBfa">Takeru Hokazono</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />134130
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200084" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              14
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga Dandadan by Tatsu Yukinobu for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200084/title_thumbnail_portrait_list/312241.jpg?key=5589bd1f6e083c111f4854b22401d244&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200084/title_thumbnail_portrait_list/312241.jpg?key=5589bd1f6e083c111f4854b22401d244&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">Dandadan</p>
+                <p class="RankingTitle-module_author_2DBfa">Tatsu Yukinobu</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />148785
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200059" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              15
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga SAKAMOTO DAYS by Yuto Suzuki for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200059/title_thumbnail_portrait_list/313630.jpg?key=b9b7078d83650641e47ec21332c672bf&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200059/title_thumbnail_portrait_list/313630.jpg?key=b9b7078d83650641e47ec21332c672bf&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">SAKAMOTO DAYS</p>
+                <p class="RankingTitle-module_author_2DBfa">Yuto Suzuki</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />143566
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200097" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              17
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga RuriDragon by Masaoki Shindo for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200097/title_thumbnail_portrait_list/313576.jpg?key=674a3ae5391dc63ea71f19c25a09106f&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200097/title_thumbnail_portrait_list/313576.jpg?key=674a3ae5391dc63ea71f19c25a09106f&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">RuriDragon</p>
+                <p class="RankingTitle-module_author_2DBfa">Masaoki Shindo</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />93323
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200038" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              23
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga UNDEAD + UNLUCK by Yoshifumi Tozuka for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200038/title_thumbnail_portrait_list/314179.jpg?key=e9b6c8663f4f40a08e2cbbffc1eea06b&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200038/title_thumbnail_portrait_list/314179.jpg?key=e9b6c8663f4f40a08e2cbbffc1eea06b&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">UNDEAD + UNLUCK</p>
+                <p class="RankingTitle-module_author_2DBfa">Yoshifumi Tozuka</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />68287
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL">
+          <a href="/titles/200083" class=""
+            ><p
+              class="RankingTitle-module_icon_hKj5L RankingTitle-module_rankingNumber_a7Dbg"
+            >
+              24
+            </p>
+            <div class="RankingTitle-module_rankingTitle_2E0E-">
+              <img
+                alt="Read the Manga La caja azul. by Kouji Miura for free!"
+                class="RankingTitle-module_titleImg_18ZMt"
+                data-src="https://mangaplus.shueisha.co.jp/drm/title/200083/title_thumbnail_portrait_list/311830.jpg?key=5e59ad3b750d2755ad5cf6a8e1069024&amp;duration=86400"
+                src="https://mangaplus.shueisha.co.jp/drm/title/200083/title_thumbnail_portrait_list/311830.jpg?key=5e59ad3b750d2755ad5cf6a8e1069024&amp;duration=86400"
+                lazy="loaded"
+              />
+              <div class="RankingTitle-module_titleDetail_35zr8">
+                <p class="RankingTitle-module_title_2rg5n">La caja azul.</p>
+                <p class="RankingTitle-module_author_2DBfa">Kouji Miura</p>
+                <p class="RankingTitle-module_viewCount_1E3Re">
+                  <img
+                    src="/img/ic_hot@4x.b5709737.svg"
+                    class="RankingTitle-module_viewCountIcon_Haavo"
+                  />55497
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="Updates-module_rankingTitle_Ky0uL"><div></div></div>
+        <a href="/manga_list/hot" class="Updates-module_subShowAllBottom_1qN-f"
+          >Ver Todo</a
+        >
+      </div>
+      <!-- Termino mangas populares -->
+    </main>
+
+    <footer>
+      <!-- Pie de codigo -->
+      <h3>Entrar en la comunidad</h3>
+      <b>
+        ¿Te gustaria entrar en nuestra sociedad para estar al dia con nuestros
+        articulos?</b
+      >
+      <br />
+      <b>
+        <a href="/HTML/User/Registro.html"> Registrate </a> o si ya tienes
+        <a href="/HTML/User/InicioSesion.html"> Inicia Sesion</a></b
+      >
+    </footer>
+  </body>
+</html>

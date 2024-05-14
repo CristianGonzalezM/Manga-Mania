@@ -29,4 +29,6 @@ https://web.dragonball-api.com/documentation
 
 https://mangascompletos.com/hunter-x-hunter-manga/
 https://www.clarin.com/internacional/7-mejores-mangas-shonen-leerlos-online_0_Ep3lHP5SE2.html
+https://www.lexmangas.com/descargar-boruto-42-manga-pdf-mega-mf/
+https://api.mangadex.org/docs/2-limitations/
 -->

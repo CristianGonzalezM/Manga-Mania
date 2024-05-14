@@ -9,6 +9,7 @@ header, footer {
 
 nav {
     text-align: center;
+    opacity: 90%;
 }
 main {
     margin: 0;
