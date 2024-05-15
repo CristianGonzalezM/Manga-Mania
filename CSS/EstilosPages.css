@@ -17,12 +17,6 @@ main {
     text-align: center;
 }
 
-img {
-    border-radius: 25%;
-    width: 70%;
-    height: auto;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -32,14 +26,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
 }
-/*
-.cerrar {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-}
-*/
+
 hr {
     border: 5px solid red;
 }
@@ -62,11 +49,15 @@ hr {
 }
 
 .carousel-container {
-    max-width: 500px;
+    max-width: 900px;
     margin: 0 auto;
 }
 .carousel-img {
     max-height: 500px;
     width: 500px;
+}
+
+.card {
+    margin: 10px;
 }
 /*API de NARUTO*/

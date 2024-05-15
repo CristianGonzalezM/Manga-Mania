@@ -15,7 +15,8 @@
     <link rel="website icon" type="png" href="/Images/LogoMangaMania.png"> <!-- Llamar el logo de la pagina -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/JavaScript/dragonBallAPI.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="/JavaScript/comentariosAcciones.js"></script>
 </head>
 <body> <!-- Cuerpo del codigo -->
     <header> <!-- Cabeza del codigo -->
@@ -28,25 +29,20 @@
     <main> <!-- Codigo principal o central -->
         <nav class="navbar bg-body-tertiary">
             <div class="container">
-              <a class="navbar-brand" href="/index.html">
-                <i class="bi bi-house-fill"></i> Inicio
-              </a>
-              <a class="navbar-brand" href="/HTML/Pages/Pag Mangas.html">
-                <i class="bi bi-book"></i> Mangas</a
-              >
-              <a class="navbar-brand" href="/HTML/Pages/Pag Categorias.html">
-                <i class="bi bi-tags"></i> Categoria</a
-              >
-              <a class="navbar-brand" href="/HTML/Pages/Pag_Populares.html">
-                <i class="bi bi-star"></i> Popular</a
-              >
+                <a class="navbar-brand" href="javascript:history.back()" > <i class="bi bi-skip-backward"></i> Regresar </a>
+                <a class="navbar-brand" href="/index.html"><i class="bi bi-house-fill"></i> Inicio</a>
+                <a class="navbar-brand" href="/HTML/Pages/Pag Mangas.html"><i class="bi bi-book"></i> Mangas</a>
+                <a class="navbar-brand" href="/HTML/Pages/Pag Categorias.html"><i class="bi bi-tags"></i> Categoria</a>
+                <a class="navbar-brand" href="/HTML/Pages/Pag_Populares.html"><i class="bi bi-star"></i> Popular</a>
             </div>
         </nav><br>
 
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <img alt="PortadaDragonBall" src="/Images/PortadaDragonBall.jfif" >
+                    <div class="card">
+                        <img alt="PortadaDragonBall" src="/Images/PortadaDragonBall.jfif">
+                    </div>
                     <div class="list-group">
                         <div class="btn btn-secondary">
                             <i class="bi bi-caret-right"></i> Estado: <i class="bi bi-broadcast"></i><span> Finalizado </span> <i class="bi bi-caret-left"></i>
@@ -60,7 +56,7 @@
                 </div>
                 
                 <div class="col-8">
-                    <h1>Naruto</h1>
+                    <h1>Dragon Ball</h1>
                     <b style="margin: 20px; padding: 20px;">
                         Su trama describe las aventuras de Gokū, un guerrero saiyajin, experto en artes marciales que en su infancia inicia sus viajes y aventuras en las que pone a prueba y mejora sus habilidades de pelea, enfrentando oponentes y protegiendo a la Tierra de otros seres que quieren conquistarla y exterminar a la humanidad.
                     </b>
@@ -123,53 +119,41 @@
         <iframe src="https://drive.google.com/file/d/1i8X-jObg1nVreMLsgtDQIFD31Nrfskmu/preview" width="640" height="480" allow="autoplay"></iframe>
         <!-- Termino video Trailer -->
         <hr>
-        <!-- Inicio API -->
+        <!-- Inicio Comentarios -->
         <div class="container">
-            <h2>Personajes</h2>
-            <div id="caracteres" class="row">
-                <!-- Personajes se cargarán aqui -->
-            </div>
-            <div id="loading">
-                Cargando más personajes ...
-            </div>
-        </div>
-        <!-- Termino API -->
-        <hr>
-        <!-- Inicio Productos -->
-        <div class="container">
-            <h2>Registro de Producto</h2>
-            <form id="mangaForm">
+            <h2>Comentarios</h2>
+            <form id="comentarioForm">
                 <div class="form-group">
-                    <label for="mangaName">Nombre Manga:</label>
-                    <input type="text" class="form-control" id="mangaName" name="mangaName" required>
+                    <label for="userName">Nombre Usuario:</label>
+                    <input type="text" class="form-control" id="userName" name="userName" required>
                 </div>
                 <div class="form-group">
-                    <label for="productPrice">Precio:</label>
-                    <input type="number" class="form-control" id="mangaPrice" name="mangaPrice" required>
+                    <label for="comentarioDescrip">Descripcion:</label>
+                    <input type="text" class="form-control" id="comentarioDescrip" name="comentarioDescrip" required>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-primary">Registrar</button>
+                <button type="submit" class="btn btn-primary">Registrar Comentario</button>
             </form>
         </div>
-        <!-- Termino Productos -->
+        <!-- Termino Comentarios -->
         <hr>
-        <!-- Inicio Productos Registrados -->
+        <!-- Inicio Comentarios Registrados -->
         <div class="container">
-            <h3>Productos Registrados</h3>
-            <table id="mangasTable" class="table">
+            <h3>Comentarios Registrados</h3>
+            <table id="comentariosTable" class="table">
                 <thead>
                     <tr>
-                        <th>Nombre Manga</th>
-                        <th>Precio</th>
+                        <th>Nombre Usuario</th>
+                        <th>Descripcion</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Los registros del producto se añadirán aquí -->
+                    <!-- Los registros de los Comentarios se añadirán aquí -->
                 </tbody>
             </table>
         </div>
-        <!-- Termino Productos Registrados -->
+        <!-- Termino Comentarios Registrados -->
     </main>
     <footer> <!-- Pie de codigo -->
         <h3> Entrar en la comunidad </h3>
