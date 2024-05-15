@@ -19,25 +19,14 @@ let nextUrl = 'https://rickandmortyapi.com/api/character'; // URL inicial para p
 
         function characterTemplate(character){
             return $(`<div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="${character.image}" alt="${character.name}">
-                    <div class="card-body">
-                        <h5 class="card-title">${character.name}</h5>
-                        <p class="card-text">${character.species}</p>
-                    </div>
-                </div>
-            </div>`);
-        }
-
-        function episodeTemplate(episode){
-            return $(`<div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">${episode.name}</h5>
-                        <p class="card-text">${episode.episode} - ${episode.air_date}</p>
-                    </div>
-                </div>
-            </div>`);
+                        <div class="card">
+                            <img class="card-img-top" src="${character.image}" alt="${character.name}">
+                            <div class="card-body">
+                                <h5 class="card-title">${character.name}</h5>
+                                <p class="card-text">${character.species}</p>
+                            </div>
+                        </div>
+                    </div>`);
         }
 /*
         $(window).scroll(function() {
