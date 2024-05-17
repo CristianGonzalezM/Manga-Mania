@@ -38,6 +38,12 @@ body {
     justify-content: center;
 }
 
+.fondoForm{
+    background: #393939;
+    opacity: 90%;
+    border-radius: 10px;
+}
+
  
 /* tamñ y color  */
 
