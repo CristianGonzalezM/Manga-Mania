@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/CSS/EstilosUser.css"><!-- Llamar Style deseado -->
     <link rel="website icon" type="png" href="/Images/LogoMangaMania.png"> <!-- Llamar el logo de la pagina -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
     <script src="/JavaScript/formulario.js"></script>
 </head>
 
@@ -36,8 +38,8 @@
             </div>
         </nav> <br>
 
-        <div class="container">
-            <form action="" class="formulario" id="formulario">
+        <div class="contenedor container">
+            <form action="/index.html" class="formulario" id="formulario">
                 <div class="formulario__grupo" id="grupo__usuario">
                     <label for="usuario" class="formulario__label">Usuario</label>
                     <div class="formulario__grupo-input">
@@ -60,31 +62,31 @@
                         <input type="password" class="formulario__input" name="password" id="password" placeholder="Ingrese su Contraseña">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 diigitos.</p>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
                 </div>
                 <div class="formulario__grupo" id="grupo__password2">
                     <label for="password2" class="formulario__label">Repetir Contraseña</label>
                     <div class="formulario__grupo-input">
-                        <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Repita la Contraseña">
+                        <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Repetir Contraseña">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                     <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
                 </div>
                 <div class="formulario__grupo" id="grupo__correo">
-                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <label for="correo" class="formulario__label">Correo</label>
                     <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ingrese su Correo">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                    <p class="formulario__input-error">El correo sólo puede contener letras, números, puntos, guiones y guión bajo.</p>
                 </div>
                 <div class="formulario__grupo" id="grupo__telefono">
-                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <label for="telefono" class="formulario__label">Telefono</label>
                     <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 9 dígitos.</p>
+                    <p class="formulario__input-error">El teléfono sólo puede contener números y el máximo son 14 dígitos.</p>
                 </div>
                 <div class="formulario__grupo" id="grupo__terminos">
                     <label class="formulario__label">
@@ -100,11 +102,14 @@
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                 </div>
             </form>
+        </div><br>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <img class="logo" src="/Images/LogoMangaMania.png" alt="LogoMangaMania">
+            <h1> MangaMania || Registrarse</h1>
         </div>
-    </main> <br>
-
-    <footer> <!-- Pie de codigo -->
-
     </footer>
 </body>
-</html
+</html>

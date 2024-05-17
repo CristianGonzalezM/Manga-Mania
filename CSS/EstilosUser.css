@@ -38,6 +38,13 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.contenedorUser {
+    background-color: #000; /* Color negro */
+    padding: 20px;
+    border-radius: 10px; /* Añadir bordes redondeados */
+}
+
 /* Apartado */
 .formulario {
     display: grid;
@@ -152,7 +159,7 @@ body {
     display: block;
 }
 
-/*  Estilos para Validacion   */
+/* Estilos para Validacion */
 .formulario__grupo-correcto .formulario__validacion-estado {
     color: #1ed12d;
     opacity: 1;
@@ -176,13 +183,11 @@ body {
         grid-template-columns: 1fr;
     }
 
-
     .formulario__grupo-terminos,
     .formulario__mensaje,
     .formulario__grupo-btn-enviar {
         grid-column: 1;
     }
-
 
     .formulario__btn {
         width: 100%;
