@@ -30,14 +30,12 @@ body {
     width: 10%;
     height: auto;
     margin-right: 20px;
-    border-radius: 25%;
 }
 
 .contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
  
