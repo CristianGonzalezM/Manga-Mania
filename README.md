@@ -17,11 +17,4 @@ Paginas que hay que implementar + Consumo de API + Guardar Datos en el localStor
 https://getbootstrap.com/
 https://jquery.com/
 https://jqueryvalidation.org/
-
-API de ejemplo:
-https://publicapis.dev/category/anime
-https://narutodb.xyz/docs/characters/getAllCharacters
-
-https://www.jsonapi.co/public-api/category/Anime
-https://myanimelist.net/clubs.php?cid=13727
 -->
