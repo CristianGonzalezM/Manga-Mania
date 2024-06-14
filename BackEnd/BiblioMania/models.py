@@ -1,5 +1,18 @@
 from django.db import models
 
+class Autor(models.Model):
+    GENDER_CHOICES = [
+        ('M', 'Masculino'),
+        ('F', 'Femenino'),
+    ]
+
+    name = models.CharField(max_length=100)
+    country = models.CharField(max_length=100)
+    gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
+
+    def __str__(self):
+        return f'{self.name}'
+
 class Manga(models.Model):
     STATUS_CHOICES = [
         ('E', 'En emisión'),
@@ -24,3 +37,18 @@ class Resena(models.Model):
 
     def __str__(self):
         return f'Reseña de {self.user} del Manga {self.manga.title} con una puntuación de {self.rating}'
+    
+class EstadoMangaUsuario(models.Model):
+    ESTADO_CHOICES = [
+        ('V', 'Viendo'),
+        ('C', 'Considerando'),
+        ('T', 'Completado'),
+        ('N', 'Ninguno'),
+    ]
+
+    user = models.CharField(max_length=100)
+    manga = models.ForeignKey(Manga, on_delete=models.CASCADE)
+    estado = models.CharField(max_length=1, choices=ESTADO_CHOICES)
+
+    def __str__(self):
+        return f'{self.user} - {self.manga.title}: {self.estado}'
