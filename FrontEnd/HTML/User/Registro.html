@@ -11,14 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Termino Bootstrap -->
 
-    <link rel="stylesheet" href="/CSS/EstilosUser.css"><!-- Llamar Style deseado -->
-    <link rel="website icon" type="png" href="/Images/LogoMangaMania.png"> <!-- Llamar el logo de la pagina -->
+    <link rel="stylesheet" href="/FrontEnd/CSS/EstilosUser.css"><!-- Llamar Style deseado -->
+    <link rel="website icon" type="png" href="/FrontEnd/Images/LogoMangaMania.png"> <!-- Llamar el logo de la pagina -->
 </head>
 
 <body> <!-- Cuerpo del codigo -->
     <header> <!-- Cabeza del codigo -->
         <div class="contenedor">
-            <img class="logo" src="/Images/LogoMangaMania.png" alt="LogoMangaMania">
+            <img class="logo" src="/FrontEnd/Images/LogoMangaMania.png" alt="LogoMangaMania">
             <h1> MangaMania || Registrarse</h1>
         </div>
     </header>
@@ -27,10 +27,10 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="javascript:history.back()" > <i class="bi bi-skip-backward"></i> Regresar </a>
-                <a class="navbar-brand" href="/index.html"><i class="bi bi-house-fill"></i> Inicio</a>
-                <a class="navbar-brand" href="/HTML/Pages/Pag Mangas.html"><i class="bi bi-book"></i> Mangas</a>
-                <a class="navbar-brand" href="/HTML/Pages/Pag Categorias.html"><i class="bi bi-tags"></i> Categoria</a>
-                <a class="navbar-brand" href="/HTML/Pages/Pag_Populares.html"><i class="bi bi-star"></i> Popular</a>
+                <a class="navbar-brand" href="/FrontEnd/index.html"><i class="bi bi-house-fill"></i> Inicio</a>
+                <a class="navbar-brand" href="/FrontEnd/HTML/Pages/Pag Mangas.html"><i class="bi bi-book"></i> Mangas</a>
+                <a class="navbar-brand" href="/FrontEnd/HTML/Pages/Pag Categorias.html"><i class="bi bi-tags"></i> Categoria</a>
+                <a class="navbar-brand" href="/FrontEnd/HTML/Pages/Pag_Populares.html"><i class="bi bi-star"></i> Popular</a>
             </div>
         </nav> <br>
 
@@ -41,6 +41,7 @@
                     <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ingrese Su Usuario">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        <i class="formulario__validacion-estado bi"></i>
                     </div>
                     <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                 </div>  
@@ -103,10 +104,10 @@
 
     <footer> <!-- Pie de codigo -->
         <div class="contenedor">
-            <img class="logo" src="/Images/LogoMangaMania.png" alt="LogoMangaMania">
+            <img class="logo" src="/FrontEnd/Images/LogoMangaMania.png" alt="LogoMangaMania">
             <h1> MangaMania || Registrarse</h1>
         </div>
     </footer>
-    <script src="/JavaScript/formulario.js"></script>
+    <script src="/FrontEnd/JavaScript/formulario.js"></script>
 </body>
 </html
