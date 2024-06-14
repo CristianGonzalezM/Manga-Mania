@@ -34,53 +34,45 @@
             </div>
         </nav> <br>
 
-        <div class="container text-left">
-            <div class="row align-items-start">
-                <div class="col-12">
-                    <div class="contenedor fondoForm">
-                        <h2>Iniciar Sesión</h2>
-                        <form id="miFormulario" class="formulario">
-                            <div class="formulario__grupo" id="grupo__txtGmail">
-                                <label for="txtGmail" class="formulario__label"><i class="bi bi-file-person-fill"></i> Gmail cliente:</label>
-                                <div class="formulario__grupo-input">
-                                    <input type="email" id="txtGmail" name="gmail" class="formulario__input" placeholder="abc@gmail.com" required>
-                                    <i class="formulario__validacion-estado bi bi-check-circle-fill"></i>
-                                </div>
-                                <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
-                            </div>
 
-                            <div class="formulario__grupo" id="grupo__contrasena">
-                                <label for="contrasena" class="formulario__label"><i class="bi bi-file-lock2-fill"></i> Contraseña:</label>
-                                <div class="formulario__grupo-input">
-                                    <input type="password" id="contrasena" class="formulario__input" placeholder="Contraseña" required minlength="4" maxlength="12">
-                                    <i class="formulario__validacion-estado bi bi-check-circle-fill"></i>
-                                </div>
-                                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
-                            </div>
-
-                            <div class="formulario__grupo formulario__grupo-btn-enviar">
-                                <button type="submit" class="formulario__btn"><i class="bi bi-box-arrow-in-left"></i> Iniciar Sesión</button>
-                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
-                            </div>
-
-                            <div class="formulario__grupo formulario__grupo-btn-enviar">
-                                <b><a href="/HTML/User/Registro.html">Registrarse</a> || <a href="/HTML/User/RecuperarContra.html">Olvidé mi contraseña</a></b>
-                            </div>
-
-                            <div class="formulario__mensaje" id="formulario__mensaje">
-                                <p><i class="bi bi-exclamation-triangle-fill"></i> <b>Error:</b> Por favor rellena el formulario correctamente.</p>
-                            </div>
-                        </form>
+        <div class="container fondoForm">
+            <form id="miFormulario" class="formulario">
+                <div class="formulario__grupo" id="grupo__gmail">
+                    <label for="gmail" class="formulario__label">Correo Electronico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="gmail" id="gmail" class="formulario__input" placeholder="correo@correo.com" required>
+                        <i class="formulario__validacion-estado bi"></i>
                     </div>
+                    <p class="formulario__input-error">El correo debe ser valido.</p>
                 </div>
-            </div>
+
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password"class="formulario__input" placeholder="Ingrese su Contraseña" required>
+                        <i class="formulario__validacion-estado bi"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña debe tener entre 4 y 12 caracteres.</p>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p>Error: Por favor rellena el formulario correctamente.</p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Iniciar Sesión</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+            </form>
         </div>
-    </main> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </main> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <footer> <!-- Pie de código -->
         <div class="contenedor">
             <img class="logo" src="/Images/LogoMangaMania.png" alt="LogoMangaMania">
-            <h1>MangaMania || Inicio de Sesión en la cuenta</h1>
+            <h1>MangaMania || Inicio de Sesión</h1>
         </div>
+        <script src="/JavaScript/ses2.js"></script>
     </footer>
 </html>
