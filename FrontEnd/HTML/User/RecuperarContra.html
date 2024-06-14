@@ -35,43 +35,41 @@
             </div>
         </nav> <br>
         
+        <div class="container text-center">
+            <div class="row align-items-center justify-content-center"> 
 
-        <div class="container fondoForm">
-            <form id="miFormulario" class="formulario">
-                <div class="formulario__grupo" id="grupo__gmail">
-                    <label for="gmail" class="formulario__label">Correo Electronico</label>
-                    <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="gmail" id="gmail" class="formulario__input" placeholder="correo@correo.com" required>
-                        <i class="formulario__validacion-estado bi"></i>
+                <div class="col-5">
+                    <div class="contenedor fondoForm">
+                        <h1>Cambiar Contraseña</h1>
+                        <form id="formularioRecuperarContraseña">
+                            <i class="bi bi-file-person-fill"></i>
+                            <b> <label for="rut"> Rut Cliente:</label> </b> <br>
+                            <input type="text" id="rut" name="rut" required> <br>
+                            
+                            <i class="bi bi-file-lock2-fill"></i>
+                            <b> <label for="ContraNew"> Contraseña Nueva:</label> </b> <br>
+                            <input type="password" id="ContraNew" name="ContraNew" required> <br>
+
+                            <i class="bi bi-file-lock2-fill"></i>
+                            <b> <label for="ConfirmContraNew"> Confirmar Contraseña:</label> </b> <br>
+                            <input type="password" id="ConfirmContraNew" name="ConfirmContraNew" required>
+
+                            <button type="submit"> 
+                                <i class="bi bi-box-arrow-in-left"></i>
+                            </button> <br>
+                            
+                            <b> <a href="/HTML/User/InicioSesion.html"> Iniciar Sesion </a> </b>
+                        </form>
                     </div>
-                    <p class="formulario__input-error">El correo debe ser valido.</p>
+                    <p class="formulario__input-error">Por favor, ingrese un correo electrónico válido.</p>
                 </div>
-
-                <div class="formulario__grupo" id="grupo__password">
-                    <label for="password" class="formulario__label">Contraseña</label>
-                    <div class="formulario__grupo-input">
-                        <input type="password" class="formulario__input" name="password" id="password"class="formulario__input" placeholder="Ingrese nueva contraseña" required>
-                        <i class="formulario__validacion-estado bi"></i>
-                    </div>
-                    <p class="formulario__input-error">La contraseña debe tener entre 4 y 12 caracteres.</p>
-                </div>
-
-                <div class="formulario__mensaje" id="formulario__mensaje">
-                    <p>Error: Por favor rellena el formulario correctamente.</p>
-                </div>
-                
 
                 <div class="formulario__grupo formulario__grupo-btn-enviar">
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-                    <b> <a href="/HTML/User/InicioSesion.html"> </a> </b>
                     <button type="submit" class="formulario__btn">Recuperar Cuenta</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Se ha enviado un correo de recuperación!</p>
                 </div>
-            </form>
-        </div>
-  
 
-
-    </main> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </main> <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <footer> <!-- Pie de codigo -->
         <div class="contenedor">
@@ -79,6 +77,5 @@
             <h1>MangaMania || Recuperar Contraseña de la cuenta</h1>
         </div>
     </footer>
-    <script src="/JavaScript/ses2.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 # Manga-Mania
+FrontEnd + BackEnd <br>
 Integrantes:
 
 · José Miguel Aránguiz <br>
