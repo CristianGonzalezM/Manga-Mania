@@ -20,7 +20,7 @@ class Manga(models.Model):
     ]
 
     title = models.CharField(max_length=100)
-    author = models.CharField(max_length=100)
+    author = models.ForeignKey(Autor, on_delete=models.CASCADE)
     publication_date = models.DateField()
     description = models.TextField()
     status = models.CharField(max_length=1, choices=STATUS_CHOICES)
