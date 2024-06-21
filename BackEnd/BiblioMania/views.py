@@ -1,7 +1,7 @@
 from rest_framework import viewsets
-from .models import Autor, Manga, Resena, EstadoMangaUsuario
+from .models import Autor, Manga, Resena, EstadoMangaUsuario, Suscripcion
 from django.contrib.auth.models import  User
-from .serializers import AutorSerializer, MangaSerializer, ResenaSerializer, UserSerializer, EstadoMangaUsuarioSerializer
+from .serializers import AutorSerializer, MangaSerializer, ResenaSerializer, UserSerializer, EstadoMangaUsuarioSerializer, SuscripcionSerializer
 
 # Create your views here.
 class AutorViewSet(viewsets.ModelViewSet):
@@ -23,3 +23,7 @@ class UserViewSet(viewsets.ModelViewSet):
 class EstadoMangaUsuarioViewSet(viewsets.ModelViewSet):
     queryset = EstadoMangaUsuario.objects.all()
     serializer_class = EstadoMangaUsuarioSerializer
+
+class SuscripcionViewSet(viewsets.ModelViewSet):
+    queryset = Suscripcion.objects.all()
+    serializer_class = SuscripcionSerializer

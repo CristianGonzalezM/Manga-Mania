@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Autor, Manga, Resena, EstadoMangaUsuario
+from .models import Autor, Manga, Resena, EstadoMangaUsuario, Suscripcion
 from django.contrib.auth.models import User
 
 class AutorSerializer(serializers.ModelSerializer):
@@ -13,6 +13,7 @@ class MangaSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class ResenaSerializer(serializers.ModelSerializer):
+    user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
     class Meta:
         model = Resena
         fields = '__all__'
@@ -23,6 +24,13 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['username', 'first_name', 'last_name', 'email', 'password']
 
 class EstadoMangaUsuarioSerializer(serializers.ModelSerializer):
+    user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
     class Meta:
         model = EstadoMangaUsuario
+        fields = '__all__'
+
+class SuscripcionSerializer(serializers.ModelSerializer):
+    user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
+    class Meta:
+        model = Suscripcion
         fields = '__all__'
