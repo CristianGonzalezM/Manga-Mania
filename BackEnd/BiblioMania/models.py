@@ -63,24 +63,12 @@ class EstadoMangaUsuario(models.Model):
     
 class Suscripcion(models.Model):
     TIPO_SUSCRIPCION_CHOICES = [
-        ('M', 'Mensual'),
-        ('S', 'Semestral'),
-        ('A', 'Anual'),
+        ('M', 'Mensual $10 Dolares'),
+        ('A', 'Anual $60 Dolares'),
     ]
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     tipo_suscripcion = models.CharField(max_length=1, choices=TIPO_SUSCRIPCION_CHOICES)
     suscription_date = models.DateField(auto_now_add=True)
-    precio = models.DecimalField(max_digits=10, decimal_places=2)
-
+    
     def __str__(self):
         return f'{self.user.username} - {self.tipo_suscripcion}'
-
-    def save(self, *args, **kwargs):
-        if self.tipo_suscripcion == 'M':
-            self.precio = 10  # Precio mensual
-        elif self.tipo_suscripcion == 'S':
-            self.precio = 30  # Precio semestral
-        elif self.tipo_suscripcion == 'A':
-            self.precio = 60  # Precio anual
-
-        super().save(*args, **kwargs)

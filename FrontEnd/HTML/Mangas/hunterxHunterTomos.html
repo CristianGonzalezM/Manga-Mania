@@ -16,7 +16,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="/FrontEnd/JavaScript/comentariosAcciones.js"></script>
+    <script src="/FrontEnd/JavaScript/resena.js"></script>
 </head>
 <body> <!-- Cuerpo del codigo -->
     <header> <!-- Cabeza del codigo -->
@@ -34,6 +34,7 @@
                 <a class="navbar-brand" href="/FrontEnd/HTML/Pages/Pag Mangas.html"><i class="bi bi-book"></i> Mangas</a>
                 <a class="navbar-brand" href="/FrontEnd/HTML/Pages/Pag Categorias.html"><i class="bi bi-tags"></i> Categoria</a>
                 <a class="navbar-brand" href="/FrontEnd/HTML/Pages/Pag_Populares.html"><i class="bi bi-star"></i> Popular</a>
+                <a class="navbar-brand" href="/FrontEnd/HTML/Pages/Pag_Suscripccion.html"><i class="bi bi-shop"></i> Suscripccion</a>
             </div>
         </nav><br>
 
@@ -123,23 +124,36 @@
         </div>
         <!-- Termino video Trailer -->
         <hr>
-        <!-- Inicio Comentarios -->
+        <!-- Inicio RESEÑA -->
         <div class="container">
-            <h2>Comentarios</h2>
-            <form id="comentarioForm">
+            <h2>RESEÑA</h2>
+            <form id="resenaForm">
                 <div class="form-group">
-                    <label for="userName">Nombre Usuario:</label>
-                    <input type="text" class="form-control" id="userName" name="userName" required>
+                    <label for="user_id">Usuario ID:</label>
+                    <input type="text" class="form-control" id="user_id" name="user_id" required>
                 </div>
                 <div class="form-group">
-                    <label for="comentarioDescrip">Descripcion:</label>
-                    <input type="text" class="form-control" id="comentarioDescrip" name="comentarioDescrip" required>
+                    <label for="manga_id">Manga ID:</label>
+                    <input type="text" class="form-control" id="manga_id" name="manga_id" required>
                 </div>
-                <br>
-                <button type="submit" class="btn btn-primary">Registrar Comentario</button>
+                <div class="form-group">
+                    <label for="rating">Calificación:</label>
+                    <select class="form-select" aria-label="Default select example" id="rating" name="rating">
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comentario:</label>
+                    <textarea class="form-control" placeholder="Pon tu reseña aqui" id="comment" name="comment"></textarea>
+                </div><br>
+                <button type="button" onclick="submitResena()" class="btn btn-primary">Registrar Reseña</button>
             </form>
         </div>
-        <!-- Termino Comentarios -->
+        <!-- Termino RESEÑA -->
         <hr>
         <!-- Inicio Comentarios Registrados -->
         <div class="container">
