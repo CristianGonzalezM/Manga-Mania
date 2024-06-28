@@ -15,6 +15,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="/FrontEnd/JavaScript/myAPIResena.js"></script>
+    <script src="/FrontEnd/JavaScript/myAPIAutor.js"></script>
+    <script src="/FrontEnd/JavaScript/myAPIManga.js"></script>
 </head>
 <body> <!-- Cuerpo del codigo -->
     <header> <!-- Cabeza del codigo -->
@@ -162,6 +165,135 @@
             </div>
 
         </div><br>
+        <hr>
+        <!-- Inicio Formulario Reseña -->
+        <div class="container">
+            <h3>Crear Nuevos Comentarios</h3>
+            <form id="resenaForm" class="mt-4">
+                <div class="form-group">
+                    <label for="manga">Manga</label>
+                    <select class="form-control" id="manga" required>
+                        <!-- Opciones de manga se cargarán dinámicamente -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <select class="form-control" id="rating" required>
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comentario</label>
+                    <textarea class="form-control" id="comment" rows="3" required></textarea>
+                </div><br>
+                <button type="submit" class="btn btn-primary btn-block">Guardar Reseña</button>
+            </form>
+        </div>                
+        <!-- Termino Formulario Reseña -->
+         <hr>
+        <!-- Inicio Formulario Autor -->
+         <div class="container">
+            <h3>Crear Autores</h3>
+            <form id="autorForm" class="mt-4">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">País</label>
+                    <input type="text" class="form-control" id="country" placeholder="País" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Género</label>
+                    <select class="form-control" id="gender" required>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </div><br>
+                <button type="submit" class="btn btn-primary btn-block">Guardar Autor</button>
+            </form>
+        </div>
+        <!-- Termino Formulario Autor -->
+        <!-- Inicio Tabla registros de Autor -->
+        <div class="container">
+            <div class="mt-4">
+                <h3>Lista de Autores</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>País</th>
+                            <th>Género</th>
+                        </tr>
+                    </thead>
+                    <tbody id="autoresTableBody">
+                        <!-- Aqui se cargaran -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Termino Tabla registros de Autor -->
+         <hr>
+        <!-- Inicio Formulario para los Mangas -->
+        <div class="container">
+            <h3>Pedir Futuros Mangas</h3>
+            <form id="mangaForm" class="mt-4">
+                <div class="form-group">
+                    <label for="title">Título</label>
+                    <input type="text" class="form-control" id="title" placeholder="Título del manga" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Autor</label>
+                    <select class="form-control" id="author" required>
+                        <option value="">Selecciona un autor</option>
+                        <!-- Se cargara aqui -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="publication_date">Fecha de Publicación</label>
+                    <input type="date" class="form-control" id="publication_date" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Descripción</label>
+                    <textarea class="form-control" id="description" rows="3" placeholder="Descripción del manga" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="status">Estado</label>
+                    <select class="form-control" id="status" required>
+                        <option value="E">En emisión</option>
+                        <option value="F">Finalizado</option>
+                    </select>
+                </div><br>
+                <button type="submit" class="btn btn-primary btn-block">Guardar Manga</button>
+            </form>
+        </div>
+        <!-- Termino Formulario para los Mangas -->
+        <!-- Inicio Tabla registros de Mangas -->
+        <div class="container">
+            <div class="mt-4">
+                <h3>Registros de Mangas</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Fecha de Publicación</th>
+                            <th>Descripción</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mangaTableBody">
+                        <!-- Aqui se cargaran-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Termino Tabla registros de Mangas -->
+        <hr>
     </main>
     
     <footer> <!-- Pie de codigo -->

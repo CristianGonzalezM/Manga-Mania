@@ -14,7 +14,9 @@
     <link rel="website icon" type="png" href="/FrontEnd/Images/LogoMangaMania.png"> <!-- Llamar el logo de la pagina -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="/FrontEnd/JavaScript/myAPISuscripcion.js"></script>
+    
 </head>
 <body> <!-- Cuerpo del codigo -->
     <header> <!-- Cabeza del codigo -->
@@ -39,24 +41,13 @@
         <h1>Suscripciones</h1><br>
         <!-- Inicio Tipo Suscripcciones -->
         <div class="container text-center">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/FrontEnd/Images/LogoMangaMania.png" class="card-img-top" alt="LogoMangaMania">
-                        <div class="card-body">
-                          <h5 class="card-title">Gratuita</h5>
-                          <a href="/FrontEnd/HTML/Mangas/NarutoTomos.html" class="btn btn-primary">Suscribirse</a>
-                        </div>
-                      </div>
-                </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
 
                 <div class="col">
                     <div class="card h-100">
                         <img src="/FrontEnd/Images/LogoMangaMania.png" class="card-img-top" alt="LogoMangaMania">
                         <div class="card-body">
                           <h5 class="card-title">Mensual - $10.00</h5>
-                          <a href="/FrontEnd/HTML/Mangas/NarutoTomos.html" class="btn btn-primary">Suscribirse</a>
                         </div>
                       </div>
                 </div>
@@ -66,7 +57,6 @@
                         <img src="/FrontEnd/Images/LogoMangaMania.png" class="card-img-top" alt="LogoMangaMania">
                         <div class="card-body">
                           <h5 class="card-title">Anual - $60.00</h5>
-                          <a href="/FrontEnd/HTML/Mangas/NarutoTomos.html" class="btn btn-primary">Suscribirse</a>
                         </div>
                       </div>
                 </div>
@@ -74,24 +64,41 @@
             </div>
         </div><br>
         <!-- Termino Tipo Suscripcciones -->
-         <hr>
-         <!-- Inicio Suscripcciones Registrados -->
+        <hr>
+        <!-- Inicio Formulario Suscripcciones -->
         <div class="container">
-            <h3>Comentarios Registrados</h3>
-            <table id="comentariosTable" class="table">
-                <thead>
-                    <tr>
-                        <th>Nombre Usuario</th>
-                        <th>Descripcion</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Los registros de los Suscripcciones se añadirán aquí -->
-                </tbody>
-            </table>
-        </div>
-        <!-- Termino Suscripcciones Registrados -->
+            <form id="subscriptionForm" class="mt-4">
+                <div class="form-group">
+                    <label for="user">Usuario</label>
+                    <input type="text" class="form-control" id="user" placeholder="Usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo_suscripcion">Tipo de Suscripción</label>
+                    <select class="form-control" id="tipo_suscripcion" required>
+                        <option value="M">Mensual $10 Dolares</option>
+                        <option value="A">Anual $60 Dolares</option>
+                    </select>
+                </div><br>
+                <button type="submit" class="btn btn-primary btn-block">Guardar Suscripción</button>
+            </form>
+            <hr>
+            <div class="mt-4">
+                <h3>Suscriptores</h3>
+                <table id="subscriptionTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Tipo de Suscripción</th>
+                            <th>Fecha de Suscripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se cargarán los registros dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div><br>
+        <!-- Termino Formulario Suscripcciones -->
     </main>
     
     <footer> <!-- Pie de codigo -->

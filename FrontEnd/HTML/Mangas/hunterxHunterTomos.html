@@ -16,7 +16,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="/FrontEnd/JavaScript/resena.js"></script>
 </head>
 <body> <!-- Cuerpo del codigo -->
     <header> <!-- Cabeza del codigo -->
@@ -123,55 +122,6 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/3Zf2yCMv8_I?si=H81wi4gjPUrqW7LD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <!-- Termino video Trailer -->
-        <hr>
-        <!-- Inicio RESEÑA -->
-        <div class="container">
-            <h2>RESEÑA</h2>
-            <form id="resenaForm">
-                <div class="form-group">
-                    <label for="user_id">Usuario ID:</label>
-                    <input type="text" class="form-control" id="user_id" name="user_id" required>
-                </div>
-                <div class="form-group">
-                    <label for="manga_id">Manga ID:</label>
-                    <input type="text" class="form-control" id="manga_id" name="manga_id" required>
-                </div>
-                <div class="form-group">
-                    <label for="rating">Calificación:</label>
-                    <select class="form-select" aria-label="Default select example" id="rating" name="rating">
-                        <option value="1">1 estrella</option>
-                        <option value="2">2 estrellas</option>
-                        <option value="3">3 estrellas</option>
-                        <option value="4">4 estrellas</option>
-                        <option value="5">5 estrellas</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="comment">Comentario:</label>
-                    <textarea class="form-control" placeholder="Pon tu reseña aqui" id="comment" name="comment"></textarea>
-                </div><br>
-                <button type="button" onclick="submitResena()" class="btn btn-primary">Registrar Reseña</button>
-            </form>
-        </div>
-        <!-- Termino RESEÑA -->
-        <hr>
-        <!-- Inicio Comentarios Registrados -->
-        <div class="container">
-            <h3>Comentarios Registrados</h3>
-            <table id="comentariosTable" class="table">
-                <thead>
-                    <tr>
-                        <th>Nombre Usuario</th>
-                        <th>Descripcion</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Los registros de los Comentarios se añadirán aquí -->
-                </tbody>
-            </table>
-        </div>
-        <!-- Termino Comentarios Registrados -->
     </main>
     <footer> <!-- Pie de codigo -->
         <h3> Entrar en la comunidad </h3>
